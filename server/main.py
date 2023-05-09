@@ -5,13 +5,10 @@ from fastai.vision.all import *
 from torchvision import transforms
 from PIL import Image
 
-#Labeling function required for load_learner to work
-def GetLabel(fileName):
-  return fileName.split('_')[0]
 
 idx_to_class = {0: 'ANGRER', 1: 'DISGUST', 2: 'FEAR', 3: 'HAPPINESS', 4: 'SADNESS', 5: 'SURPRISE'}
 
-model = torch.load('server/lsdModel5_eff_68_5.pt') #Import Model
+model = torch.load('server/model.pt') #Import Model
 model.eval()
 preprocess = transforms.Compose([
         transforms.Resize(256),
