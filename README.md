@@ -15,3 +15,7 @@ docker build -t emotion-classification:1.0.0 .
 #step 2
 docker container run -d -p 5000:5000 emotion-classification:1.0.0
 ```
+
+### Example usage
+
+![imageserver](https://github.com/EUPHORIA1005/Emotion-classification-synthetic-data/assets/74987644/9d0f12db-19f1-4078-8470-dce4c93b495e)
